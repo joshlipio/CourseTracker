@@ -1,0 +1,58 @@
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\bin\Debug\netcoreapp2.2\CS4540 PS2.deps.json
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\bin\Debug\netcoreapp2.2\CS4540 PS2.runtimeconfig.json
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\bin\Debug\netcoreapp2.2\CS4540 PS2.runtimeconfig.dev.json
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\bin\Debug\netcoreapp2.2\CS4540 PS2.dll
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\bin\Debug\netcoreapp2.2\CS4540 PS2.pdb
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\bin\Debug\netcoreapp2.2\CS4540 PS2.Views.dll
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\bin\Debug\netcoreapp2.2\CS4540 PS2.Views.pdb
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\CS4540 PS2.csprojAssemblyReference.cache
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\CS4540 PS2.RazorAssemblyInfo.cache
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\CS4540 PS2.RazorAssemblyInfo.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\CS4540 PS2.AssemblyInfoInputs.cache
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\CS4540 PS2.AssemblyInfo.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\CS4540 PS2.TagHelpers.input.cache
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\CS4540 PS2.TagHelpers.output.cache
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\CS4540 PS2.RazorCoreGenerate.cache
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\CS4540 PS2.RazorTargetAssemblyInfo.cache
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\CS4540 PS2.RazorTargetAssemblyInfo.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\CS4540 PS2.Views.pdb
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\CS4540 PS2.dll
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\CS4540 PS2.pdb
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\CS4540 PS2.csproj.CopyComplete
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\CourseInstances\Create.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\CourseInstances\Delete.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\CourseInstances\DepartmentOverview.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\CourseInstances\Details.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\CourseInstances\DetailsString.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\CourseInstances\Edit.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\CourseInstances\Index.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\CourseInstances\InstructorCourses.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\Home\Professor.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\Home\Roles.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\LearningOutcomes\Create.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\LearningOutcomes\Delete.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\LearningOutcomes\Details.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\LearningOutcomes\Edit.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\LearningOutcomes\Index.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Lipio\Source\Repos\CS4540 PS2\CS4540 PS2\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs

@@ -1,0 +1,165 @@
+﻿<!--
+  Author:    Joshua Lipio
+  Date:      10/18/2019
+  Course:    CS 4540, University of Utah, School of Computing
+  Copyright: CS 4540 and Joshua Lipio - This work may not be copied for use in Academic Coursework.
+
+  I, Joshua Lipio, certify that I wrote this code from scratch and did not copy it in part or whole from
+  another source.  Any references used in the completion of the assignment are cited in my README file.
+-->
+
+@model CS4540_PS2.Models.CourseInstance
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+    <div>
+        <p class="display-4 container">@Html.DisplayFor(model => model.Name)</p>
+        <p>
+            <!-- Spans used here to keep all elements on one line -->
+            <span class="h2 text-center container">@Html.DisplayFor(model => model.Department) @Html.DisplayFor(model => model.Number)</span>
+            <span class="h2 float-right"><a href="/Home/Professor">@Html.DisplayFor(model => model.Professor)</a></span>
+        </p>
+    </div>
+ 
+
+    <!--Code learned from getbootstrap.com jumbotron and tables-->
+    <div class="jumbotron container">
+        <h1 class="display-4 text-center">Learning Outcomes</h1>
+        <p class="lead">
+            <div class="align-content-center">
+                <div class="list-group list-group-horizontal text-center" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-overview-list" data-toggle="list" href="#list-overview" role="tab" aria-controls="overview">Overview</a>
+                    <!--Loop through each LO, create a group item for each LO in the CourseInstance-->
+                    @for (int i = 1; i < Model.LearningOutcomes.Count + 1; i++)
+                    {
+                        <a class="list-group-item list-group-item-action" id="list-lo@(i)-list" data-toggle="list" href="#list-lo@(i)" role="tab" aria-controls="lo@(i)">@(i)</a>
+                    }
+                </div>
+            </div>
+        </p>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-overview" role="tabpanel" aria-labelledby="list-overview-list">
+                <p class='lead container'> @Html.DisplayFor(model => model.Description) </p>
+                <hr class="my-4">
+                @{
+                    var note = "";
+                    var id = -1;
+                    string url = "CourseInstances";
+                    <!--checks not null, grabs note info course-->
+                    @if (Model.Note != null)
+                    {
+                        note = Model.Note.Note;
+                        id = Model.Note.CourseNoteID;
+                    }
+                }
+                <div>
+                    <!--submission area for course notes-->
+                    <p class="lead container">Professor's Overview Note</p>
+                    <form asp-action="ChangeNote" onsubmit="submitNote(event,@id,'@url')" method="POST">
+                        <textarea class="form-control" id="note@(id)@(url)" name="note@(id)@(url)" rows="3">@note</textarea>
+                        <br />
+                        <input type="submit" class="btn btn-primary">
+                    </form>
+                </div>
+                <hr class="my-4">
+                <h1 class="h2 text-center">Evaluation Metrics</h1>
+                <table class="table table-striped">
+                    <thead class="text-white bg-danger">
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Assignment Name</th>
+                            <th scope="col">Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Loop through each LO, create fake assignments based on ammount of LO-->
+                        @for (int i = 1; i < Model.LearningOutcomes.Count + 1; i++)
+                        {
+
+                            <tr>
+                                <th scope="row">8/28</th>
+                                <td><a href="~/assignment_definition.pdf">PS@(i)</a><br /></td>
+                                <td><a href="~/assignment_definition.pdf">Link</a><br /></td>
+                            </tr>
+                            @if (i % 2 == 0)
+                            {
+                                <tr>
+                                    <th scope="row">9/19</th>
+                                    <td>Exam@(i / 2)</td>
+                                    <td>Link</td>
+                                </tr>
+                            }
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <!--Loop through each LO, display LO and display fake assignments for it-->
+            @for (int i = 1; i < Model.LearningOutcomes.Count + 1; i++)
+            {
+            <div class="tab-pane fade" id="list-lo@(i)" role="tabpanel" aria-labelledby="list-l@(i)-list">
+                <p class="lead container">@Html.DisplayFor(model => model.LearningOutcomes.ToList()[i - 1].Description)</p>
+                <hr class="my-4">
+                @{
+                    note = "";
+                    id = -1;
+                    url = "LearningOutcomes";
+                    <!--checks not null, grabs note info for each LO-->
+                    @if (Model.LearningOutcomes.ToList()[i-1].Note != null)
+                    {
+                        note = Model.LearningOutcomes.ToList()[i - 1].Note.Note;
+                        id = Model.LearningOutcomes.ToList()[i - 1].Note.LearningOutcomeID;
+                    }
+                }
+                <div>
+                    <!--submission area for learning outcome notes-->
+                    <p class="lead container">Learning Outcome @i Note</p>
+                    <form asp-action="ChangeNote" onsubmit="submitNote(event,@id,'@url')" method="POST">
+                        <textarea class="form-control" id="note@(id)@(url)" name="note@(id)@(url)" rows="3">@note</textarea>
+                        <br />
+                        <input type="submit" class="btn btn-primary">
+                    </form>
+                </div>
+                <hr class="my-4">
+                <h1 class="h2 text-center">Related Evaluation Metrics</h1>
+                <table class="table table-striped">
+                    <thead class="text-white bg-danger">
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Assignment Name</th>
+                            <th scope="col">Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">8/28</th>
+                            <td><a href="~/assignment_definition.pdf">PS@(i)</a><br /></td>
+                            <td><a href="~/assignment_definition.pdf">Link</a><br /></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9/19</th>
+                            <td>Exam@(i / 2)</td>
+                            <td>Link</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            }
+        </div>
+    </div>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+
+@section Scripts
+{
+    <script src="~/js/note.js"></script>
+
+}

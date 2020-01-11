@@ -1,0 +1,91 @@
+﻿<!--
+  Author:    Joshua Lipio
+  Date:      10/18/2019
+  Course:    CS 4540, University of Utah, School of Computing
+  Copyright: CS 4540 and Joshua Lipio - This work may not be copied for use in Academic Coursework.
+
+  I, Joshua Lipio, certify that I wrote this code from scratch and did not copy it in part or whole from
+  another source.  Any references used in the completion of the assignment are cited in my README file.
+-->
+
+@{
+    ViewData["Title"] = "Roles";
+}
+
+@model CS4540_PS2.Models.IdentityDB
+
+<div>
+    <p class="display-4 container"> User Roles </p>
+</div>
+<div>
+    <table class="table bg-light">
+        <thead class="bg-danger text-white">
+            <tr>
+                <th>
+                    <!-- Name -->
+                    Username
+                </th>
+                @foreach (var role in ViewBag.roleManager.Roles)
+                {
+                    <th>
+                        <!-- display role -->
+                        @role.Name
+                    </th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            <!--loop through every user -->
+            @foreach (var user in ViewBag.userManager.Users)
+            {
+                <tr>
+                    <th>
+                        <!-- display every user -->
+                        @user.UserName
+                    </th>
+                    <!--loop through every role-->
+                    @foreach (var role in ViewBag.roleManager.Roles)
+                    {
+                        List<String> result = await ViewBag.userManager.GetRolesAsync(user);
+                        <!--unique id created for every switch-->
+                        var id = user.UserName.Replace("@", "").Replace(".", "") + role.Name;
+                        <!--checks role, and enables the switch if user in role-->
+                        if (result.Contains(role.Name))
+                        {
+                            <td>
+                                <div class="custom-control custom-switch">
+                                    <label class="switch" for="@id">
+                                        <input type="checkbox" class="custom-control-input"
+                                               onclick="handleChange('@id', '@user.UserName', '@role.Name')"
+                                               id="@id" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </td>
+                        }
+                        else
+                        {
+                            <td>
+                                <div class="custom-control custom-switch">
+                                    <label class="switch" for="@id">
+                                        <input type="checkbox" class="custom-control-input"
+                                               onclick="handleChange('@id', '@user.UserName', '@role.Name')"
+                                               id="@id">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </td>
+                        }
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts
+    {
+    <script src="~/js/admin.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.css" />
+}
